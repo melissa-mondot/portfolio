@@ -50,6 +50,7 @@ const ContactForm = () => {
       >
         <label>Name</label>
         <input
+          required
           type="text"
           name="contactName"
           ref={register}
@@ -58,6 +59,7 @@ const ContactForm = () => {
         />
         <label>Email</label>
         <input
+          required
           type="email"
           name="contactEmail"
           ref={register({ required: true })}
@@ -66,6 +68,7 @@ const ContactForm = () => {
         />
         <label>Message</label>
         <textarea
+          required
           name="contactMsg"
           placeholder="I look forward to hearing from you ^_^"
           ref={register}
