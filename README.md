@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Portfolio for Melissa Mondot (Murphy)
+https://mondot-portfolio.firebaseapp.com/
+(not live) https://melissamondot.com/
+TODO: 
+- sitemap
+- write rules
+- legal page
+- accessibility and aria
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
