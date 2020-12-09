@@ -54,4 +54,12 @@ hr {
 .text-block {
   text-align: justify;
 }
+.hideModal {
+  transform: translateX(2000px);
+  animation: 3s;
+}
+.showModal {
+  transform: translateX(0px);
+  animation: 3s slidein;
+}
 `;

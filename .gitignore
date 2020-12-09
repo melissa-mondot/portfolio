@@ -22,7 +22,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# custom
-.env
+# firebase
 firebaseInfo.json
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
+
+# project
+.env
 .vscode
+.github/
+
+# eslint
+/.eslintcache

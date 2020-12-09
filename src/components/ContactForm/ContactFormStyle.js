@@ -4,7 +4,7 @@ export const StyledForm = styled.form`
 	display: flex;
 	flex-direction: column;
 	max-width: 80vw;
-	margin: 0 auto;
+	margin: -200px auto 100px;
 	label {
 		font-family: "raleway";
 		font-variant: small-caps;
@@ -46,4 +46,4 @@ export const ThankYouModal = styled.div`
 	transition: all 1s ease-out;
 `;
 
-export const HiddenModal = styled.div``;
+
