@@ -55,8 +55,7 @@ hr {
   text-align: justify;
 }
 .hideModal {
-  transform: translateX(2000px);
-  animation: 3s;
+  display: none
 }
 .showModal {
   transform: translateX(0px);

@@ -3,18 +3,19 @@ import styled from "styled-components";
 export const StyledForm = styled.form`
 	display: flex;
 	flex-direction: column;
-	max-width: 80vw;
-	margin: -200px auto 100px;
+	max-width: 600px;
+	margin: auto;
 	label {
 		font-family: "raleway";
 		font-variant: small-caps;
 		font-size: 1.25rem;
 		text-align: left;
-		margin-left: 0.5rem;
+		margin: 0.5rem;
+		
 	}
 	input {
 		margin-bottom: 1rem;
-		min-height: 2rem;
+		min-height: 3rem;
 		border-radius: 8px;
 		font-family: "raleway";
 		font-variant: small-caps;

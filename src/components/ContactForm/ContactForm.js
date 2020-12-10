@@ -40,7 +40,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <Modal showModal={showModal}>
+      <Modal showModal={true}>
         <h2>Thanks for your message! I will get back to you very soon :)</h2>
       </Modal>
       <StyledForm
@@ -48,6 +48,18 @@ const ContactForm = () => {
         name="contactForm"
         onSubmit={handleSubmit}
       >
+        <p>
+          Questions, gigs, or just want to connect? Send me a message!
+          <br />
+          <small>
+            This uses{" "}
+            <a href="https://firebase.google.com/docs/firestore/">
+              Cloud Firestore
+            </a>
+            , a very cool part of{" "}
+            <a href="https://firebase.google.com/">Google's mobile platform</a>
+          </small>
+        </p>
         <label>Name</label>
         <input
           required
@@ -70,7 +82,6 @@ const ContactForm = () => {
         <textarea
           required
           name="contactMsg"
-          placeholder="I look forward to hearing from you ^_^"
           ref={register}
           onChange={updateInput}
           value={formData.contactMsg || ""}
