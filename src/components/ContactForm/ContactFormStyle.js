@@ -44,7 +44,7 @@ export const StyledForm = styled.form`
 	}
 `;
 export const ThankYouModal = styled.div`
-	transition: all 1s ease-out;
+	transition: all 3s ease-out;
 `;
 
 

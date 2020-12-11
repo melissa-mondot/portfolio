@@ -40,7 +40,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <Modal showModal={true}>
+      <Modal showModal={showModal}>
         <h2>Thanks for your message! I will get back to you very soon :)</h2>
       </Modal>
       <StyledForm

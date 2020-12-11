@@ -19,6 +19,7 @@ const CurrentProject = () => (
 			</span>
 		</p>
 		<p className="text-block">
+			While I have a lot of side projects, this is one of my favorites.
 			I spend a lot of time on projects for local businesses and individuals,
 			and these apps and sites are naturally smaller. I realized that the more
 			robust UI libraries that exist are amazing, but often too much for a

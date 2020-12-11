@@ -20,7 +20,7 @@ const Introduction = () => (
 			team!
 		</p>
 		<i className="fal fa-smile-beam fa-2x"></i>
-		<hr />
+		
 	</StyledIntroduction>
 );
 

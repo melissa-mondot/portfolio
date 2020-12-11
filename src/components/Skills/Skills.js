@@ -17,29 +17,30 @@ const Skills = () => {
   return (
     <>
       <StyledSkills>
+      <hr />
         <h3>Tech Stack</h3>
         <div>
           <div className="skill">
             <Gauge actual={skills.html} goal={100} />
-            <div class="icon">
+            <div className="icon">
               <i className="fad fa-code fa-lg"></i>
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.css} goal={100} />
-            <div class="icon">
+            <div className="icon">
               <i className="fab fa-css3 fa-lg"></i>
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.react} goal={100} />
-            <div class="icon">
+            <div className="icon">
               <i className="fab fa-react fa-lg"></i>
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.javascript} goal={100} />
-            <div class="icon">
+            <div className="icon">
               <i className="fab fa-js-square fa-lg"></i>
             </div>
           </div>
@@ -50,13 +51,13 @@ const Skills = () => {
           </div>
           <div className="skill">
             <Gauge actual={skills.python} goal={100} />
-            <div class="icon">
+            <div className="icon">
               <i className="fab fa-python fa-lg"></i>
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.node} goal={100} />
-            <div class="icon">
+            <div className="icon">
               <i className="fab fa-node-js fa-lg"></i>
             </div>
           </div>

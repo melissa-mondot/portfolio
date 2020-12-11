@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledSkills = styled.div`
   div {
+    max-width: 600px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -19,6 +21,8 @@ export const StyledSkills = styled.div`
     }
   }
   .bonus {
+    max-width: 500px;
+    margin: auto;
     display: flex;
 	align-items: center;
 	justify-content: center;
