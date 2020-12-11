@@ -1,12 +1,6 @@
-import React from "react";
-import DevResume from "../components/Resume/Resume";
+import React from 'react';
+import DevResume from '../components/Resume/Resume';
 
-const Resume = () => {
-	return (
-		<>
-			<DevResume />
-		</>
-	);
-};
+const Resume = () => <DevResume />;
 
 export default Resume;

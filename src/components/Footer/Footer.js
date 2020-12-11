@@ -15,7 +15,7 @@ const Footer = () => {
             <NavLink to="/resume">Resume</NavLink>
             <NavLink to="/contact">Contact Me</NavLink>
             <div>
-              <a href="https://www.linkedin.com/in/melissamurphy/">
+              <a href="https://www.linkedin.com/in/melissamondot/">
                 <i className="fab fa-linkedin fa-lg"></i>
               </a>
               <a href="https://github.com/melissa-mondot">
