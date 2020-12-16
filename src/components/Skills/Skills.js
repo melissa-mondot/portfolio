@@ -1,7 +1,7 @@
-import React from "react";
-import { StyledSkills } from "./SkillsStyles.js";
-import { Gauge } from "../atoms";
-import smiley from "../../imgs/smiley.png";
+import React from 'react';
+import { StyledSkills } from './SkillsStyles.js';
+import { Gauge } from '../atoms';
+import smiley from '../../imgs/smiley.png';
 
 const Skills = () => {
   const skills = {
@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <>
       <StyledSkills>
-      <hr />
+        <hr />
         <h3>Tech Stack</h3>
         <div>
           <div className="skill">
@@ -70,31 +70,27 @@ const Skills = () => {
         <div className="bonus-list">
           <i className="fad fa-pen-nib fa-2x"></i>
           <p>
-            Experience with Adobe suite, with an emphasis on Illustrator, XD,
-            InDesign, and Photoshop
+            Experience with Adobe suite, with an emphasis on Illustrator, XD, InDesign, and
+            Photoshop
           </p>
           <i className="fab fa-figma fa-2x"></i>
           <p>Experienced in UX design with Figma, Whimsical and Adobe XD</p>
           <i className="fad fa-file-excel fa-2x"></i>
           <p>
-            Skill beyond the basics with Google Sheets, including experience
-            with the Sheets API
+            Skill beyond the basics with Google Sheets, including experience with the Sheets API
           </p>
 
           <i className="fad fa-analytics fa-2x"></i>
           <p>
-            Experience with Google Analytics, but willing to learn more (I'm a
-            beast with documentation
+            Experience with Google Analytics, but willing to learn more (I'm a beast with
+            documentation
             <span role="img" aria-label="nerd emoji">
               🤓
             </span>
             )
           </p>
           <i className="fad fa-users fa-2x"></i>
-          <p>
-            I'm a natural introvert and observer, so I am particularly good at
-            leading teams
-          </p>
+          <p>I'm a observer and relationship builder, so I am particularly good at leading teams</p>
         </div>
         <hr />
       </StyledSkills>
