@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledCurrentProject } from './CurrentProjectStyles.js';
+import { StyledCurrentProject } from './CurrentProjectStyles';
 
 const CurrentProject = () => (
   <StyledCurrentProject>
@@ -9,14 +9,14 @@ const CurrentProject = () => (
     </h3>
     <h5>A Custom UI Kit</h5>
     <p>
-      <i className="fab fa-react" aria-label={'react'}></i>
-      <i aria-label={'plus'}> + </i>
-      <span role="img" aria-label={'styled components'}>
+      <i className="fab fa-react" aria-label="react" />
+      <i aria-label="plus"> + </i>
+      <span role="img" aria-label="styled components">
         {' '}
         💅{' '}
       </span>
-      <i aria-label={'equals'}> = </i>
-      <span role="img" aria-label={'party time'}>
+      <i aria-label="equals"> = </i>
+      <span role="img" aria-label="party time">
         {' '}
         🎉{' '}
       </span>
@@ -30,7 +30,7 @@ const CurrentProject = () => (
       <small>Project in progress...</small>
     </p>
     <a href="https://github.com/melissa-murphy/atom_components" target="blank" rel="noreferrer">
-      <i className="fab fa-github fa-2x"></i>
+      <i className="fab fa-github fa-2x" />
     </a>
   </StyledCurrentProject>
 );
