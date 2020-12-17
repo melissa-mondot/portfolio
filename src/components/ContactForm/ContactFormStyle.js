@@ -6,41 +6,52 @@ export const StyledForm = styled.form`
   max-width: 600px;
   margin: auto;
   label {
+    display: flex;
+    flex-direction: column;
     font-family: 'raleway';
     font-variant: small-caps;
     font-size: 1.25rem;
     text-align: left;
     margin: 0.5rem;
-
+    padding-bottom: 1rem;
+    letter-spacing: 3px;
+    :first-child {
+      margin-top: 2rem;
+    }
     input {
-      margin-bottom: 1rem;
+      margin: 1rem 0 0 0;
       min-height: 3rem;
       border-radius: 8px;
       font-family: 'raleway';
       font-variant: small-caps;
       font-size: 1.5rem;
       border: ${({ theme }) => theme.color.dark};
+      box-shadow: rgba(0, 0, 0, 0.44) 13px 13px 15px, rgba(58, 58, 58, 0.44) -13px -13px 15px;
+    }
 
-      :first-child {
-        margin-top: 2rem;
-      }
-      :last-child {
-        margin-top: 1.5rem;
-        padding: 0.5rem 0;
-        background-color: ${({ theme }) => theme.color.tertiary};
-        color: white;
-        font-size: 1.75rem;
-        box-shadow: 13px 13px 15px #00000070, -13px -13px 15px #3a3a3a70;
-      }
+    textarea {
+      height: 10rem;
+      margin: 1rem 0 0 0;
+      font-family: 'raleway';
+      font-size: 1rem;
+      border-radius: 8px;
+      border: ${({ theme }) => theme.color.dark};
+      box-shadow: rgba(0, 0, 0, 0.44) 13px 13px 15px, rgba(58, 58, 58, 0.44) -13px -13px 15px;
     }
   }
-  textarea {
-    height: 10rem;
-    margin-bottom: 1rem;
+  .button {
+    background-color: ${({ theme }) => theme.color.tertiary};
+    width: 300px;
+    margin: auto;
+    min-height: 3rem;
     font-family: 'raleway';
-    font-size: 1rem;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.44) 13px 13px 15px, rgba(58, 58, 58, 0.44) -13px -13px 15px;
     border: ${({ theme }) => theme.color.dark};
+    color: ${({ theme }) => theme.color.light};
   }
 `;
 export const ThankYouModal = styled.div`

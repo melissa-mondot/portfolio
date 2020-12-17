@@ -10,7 +10,7 @@ const Footer = () => {
       <StyledFooter>
         <footer>
           <h2>Melissa Mondot</h2>
-          <div>
+          <nav>
             {location.pathname === '/' ? null : <NavLink to="/">Home</NavLink>}
             <NavLink to="/resume">Resume</NavLink>
             <NavLink to="/contact">Contact Me</NavLink>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <i className="fab fa-twitter-square fa-lg" />
               </a>
             </div>
-          </div>
+          </nav>
         </footer>
         <div className="legal">
           <p>Melissa Mondot, All Rights Reserved, {d.getFullYear()}</p>

@@ -54,8 +54,7 @@ const ContactForm = () => {
           <br />
           <small>
             This uses <a href="https://firebase.google.com/docs/firestore/">Cloud Firestore</a>, a
-            very cool part of{' '}
-            <a href="https://firebase.google.com/">Google`&apos s mobile platform</a>
+            very cool part of <a href="https://firebase.google.com/">Google`s mobile platform</a>
           </small>
         </p>
         <label htmlFor="contactName">
@@ -94,7 +93,7 @@ const ContactForm = () => {
             value={formData.contactMsg || ''}
           />
         </label>
-        <input type="submit" onClick={handleShowModal} />
+        <input className="button" type="submit" onClick={handleShowModal} />
       </StyledForm>
     </>
   );

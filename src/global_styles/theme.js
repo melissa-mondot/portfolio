@@ -4,6 +4,7 @@ export const theme = {
     secondary: '#f25f4c',
     tertiary: '#e53170',
     dark: '#26282b',
+    light: '#fbeee4',
     display: '#fffffe',
     text: '#a7a9be',
     stroke: 'black',
