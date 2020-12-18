@@ -1,19 +1,18 @@
 import React from 'react';
-import { StyledHero, StyledHeroInfo, BackgroundHero } from './HeroStyles';
+import { StyledHeroInfo, BackgroundHero } from './HeroStyles';
 
 const Hero = () => (
-  <>
-    <StyledHero>
-      <BackgroundHero />
-    </StyledHero>
+  <BackgroundHero>
     <StyledHeroInfo>
-      <p>developer</p>
-      <p>creative</p>
-      <p>marketer</p>
-      <p>team player</p>
+      <div>
+        <p>developer</p>
+        <p>creative</p>
+        <p>marketer</p>
+        <p>team player</p>
+      </div>
     </StyledHeroInfo>
-    <hr />
-  </>
+    {/* <hr /> */}
+  </BackgroundHero>
 );
 
 export default Hero;
