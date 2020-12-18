@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MobileMenuHeader = styled.div`
   display: flex;
@@ -28,8 +28,8 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   transition: all 0.3s ease-in-out;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
-  z-index: ${({ open }) => (open ? 9999 : "auto")};
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
+  z-index: ${({ open }) => (open ? 9999 : 'auto')};
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
   }

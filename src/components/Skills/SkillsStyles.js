@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledSkills = styled.div`
   div {
@@ -24,8 +24,8 @@ export const StyledSkills = styled.div`
     max-width: 500px;
     margin: auto;
     display: flex;
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+    justify-content: center;
     img {
       padding-left: 0.25rem;
       height: 3rem;
@@ -34,13 +34,13 @@ export const StyledSkills = styled.div`
   }
   .bonus-list {
     display: flex;
-	flex-direction: column;
+    flex-direction: column;
 
     font-size: ${({ theme }) => theme.fontSizes.small};
     max-width: 80vw;
-	margin: 0 auto;
-	svg {
-		margin:auto;
-	}
+    margin: 0 auto;
+    svg {
+      margin: auto;
+    }
   }
 `;

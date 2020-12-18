@@ -1,6 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-export const ProgressLayer = ({ dashArray, dashOffset }) => {
+import React from 'react';
+import styled from 'styled-components';
+
+export const ProgressLayer = ({ ...props }) => {
+  const { dashArray, dashOffset } = props;
   return (
     <>
       <StyledSvg

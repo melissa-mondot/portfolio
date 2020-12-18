@@ -1,8 +1,7 @@
-import styled from "styled-components";
-import helloSplash from "../../imgs/helloSplash.svg";
+import styled from 'styled-components';
+import helloSplash from '../../imgs/helloSplash.svg';
 
-export const StyledHero = styled.div`
-`;
+export const StyledHero = styled.div``;
 
 export const BackgroundHero = styled.div`
   height: 60vh;
@@ -17,7 +16,6 @@ export const StyledHeroInfo = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   margin: 1rem auto;
-
 
   p {
     font-size: ${({ theme }) => theme.fontSizes.normal};

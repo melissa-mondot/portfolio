@@ -1,16 +1,12 @@
 import React from 'react';
 import StyledModal from './ModalStyle';
 
-const Modal = ({ children, showModal }) => {
+const Modal = ({ ...props }) => {
+  const { children, showModal } = props;
   return (
-    <>
-      <StyledModal
-        className={showModal === false ? 'hideModal' : 'showModal'}
-        showModal={showModal}
-      >
-        {children}
-      </StyledModal>
-    </>
+    <StyledModal className={showModal === false ? 'hideModal' : 'showModal'} showModal={showModal}>
+      {children}
+    </StyledModal>
   );
 };
 

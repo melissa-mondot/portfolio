@@ -1,5 +1,5 @@
-import React from "react";
-import { StyledHero, StyledHeroInfo, BackgroundHero } from "./HeroStyles.js";
+import React from 'react';
+import { StyledHero, StyledHeroInfo, BackgroundHero } from './HeroStyles';
 
 const Hero = () => (
   <>

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 // import "../index.scss"
 
 export const GlobalStyles = createGlobalStyle`
@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center; 
     background: ${({ theme }) => theme.color.dark};
     color: ${({ theme }) => theme.color.text};
-    ${"" /* height: 100vh; */}
+    ${'' /* height: 100vh; */}
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }

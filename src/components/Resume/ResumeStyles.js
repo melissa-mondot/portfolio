@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ResumeWrapper = styled.div`
   max-width: 500px;

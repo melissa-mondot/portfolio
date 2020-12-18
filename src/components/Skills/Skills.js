@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledSkills } from './SkillsStyles.js';
+import { StyledSkills } from './SkillsStyles';
 import { Gauge } from '../atoms';
 import smiley from '../../imgs/smiley.png';
 
@@ -23,25 +23,25 @@ const Skills = () => {
           <div className="skill">
             <Gauge actual={skills.html} goal={100} />
             <div className="icon">
-              <i className="fad fa-code fa-lg"></i>
+              <i className="fad fa-code fa-lg" />
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.css} goal={100} />
             <div className="icon">
-              <i className="fab fa-css3 fa-lg"></i>
+              <i className="fab fa-css3 fa-lg" />
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.react} goal={100} />
             <div className="icon">
-              <i className="fab fa-react fa-lg"></i>
+              <i className="fab fa-react fa-lg" />
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.javascript} goal={100} />
             <div className="icon">
-              <i className="fab fa-js-square fa-lg"></i>
+              <i className="fab fa-js-square fa-lg" />
             </div>
           </div>
 
@@ -52,13 +52,13 @@ const Skills = () => {
           <div className="skill">
             <Gauge actual={skills.python} goal={100} />
             <div className="icon">
-              <i className="fab fa-python fa-lg"></i>
+              <i className="fab fa-python fa-lg" />
             </div>
           </div>
           <div className="skill">
             <Gauge actual={skills.node} goal={100} />
             <div className="icon">
-              <i className="fab fa-node-js fa-lg"></i>
+              <i className="fab fa-node-js fa-lg" />
             </div>
           </div>
         </div>
@@ -68,29 +68,29 @@ const Skills = () => {
           <img src={smiley} alt="smiley face icon" />
         </div>
         <div className="bonus-list">
-          <i className="fad fa-pen-nib fa-2x"></i>
+          <i className="fad fa-pen-nib fa-2x" />
           <p>
             Experience with Adobe suite, with an emphasis on Illustrator, XD, InDesign, and
             Photoshop
           </p>
-          <i className="fab fa-figma fa-2x"></i>
+          <i className="fab fa-figma fa-2x" />
           <p>Experienced in UX design with Figma, Whimsical and Adobe XD</p>
-          <i className="fad fa-file-excel fa-2x"></i>
+          <i className="fad fa-file-excel fa-2x" />
           <p>
             Skill beyond the basics with Google Sheets, including experience with the Sheets API
           </p>
 
-          <i className="fad fa-analytics fa-2x"></i>
+          <i className="fad fa-analytics fa-2x" />
           <p>
-            Experience with Google Analytics, but willing to learn more (I'm a beast with
+            Experience with Google Analytics, but willing to learn more (I&apos;m a beast with
             documentation
             <span role="img" aria-label="nerd emoji">
               🤓
             </span>
             )
           </p>
-          <i className="fad fa-users fa-2x"></i>
-          <p>I'm a observer and relationship builder, so I am particularly good at leading teams</p>
+          <i className="fad fa-users fa-2x" />
+          <p>As a natural observer and relationship builder, I excel at leading teams</p>
         </div>
         <hr />
       </StyledSkills>
