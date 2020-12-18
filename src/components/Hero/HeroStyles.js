@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import helloSplash from '../../imgs/helloSplash.svg';
 
 export const BackgroundHero = styled.div`
-  min-height: 400px;
-  max-height: 60vh;
+  height: 100%;
   background-image: url(${helloSplash});
   background-size: 260%;
   background-position-x: 95%;
@@ -15,6 +14,8 @@ export const StyledHeroInfo = styled.div`
   margin: 1rem auto;
   div {
     background-color: black;
+    box-shadow: 10px 10px 13px #00000070, -10px -10px 13px #3a3a3a70;
+    border-radius: 10px;
     margin: 1rem;
     padding: 1rem;
     @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
