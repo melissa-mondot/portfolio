@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 
 export const MobileMenuHeader = styled.div`
-  display: flex;
-  flex-direction: row;
   width: 100vw;
-  height: 100%;
+  max-height: 12rem;
   a {
-    margin-left: 6rem;
     h1 {
-      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        font-size: 1.25rem;
+      @media (min-width: ${({ theme }) => theme.breakpoints.min}) {
+        font-size: 1.1rem;
       }
       color: ${({ theme }) => theme.color.primary};
     }

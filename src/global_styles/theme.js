@@ -21,7 +21,7 @@ export const theme = {
     min: '0px',
     mobile: '576px',
     tablet: '768px',
-    large: '992px',
+    large: '1023px',
     xl: '1200',
   },
 };
