@@ -9,14 +9,14 @@ const PreviousClients = () => (
     <h3>Some previous clients:</h3>
     <Image src={gli} width={20} />
     <small>GLI Norcal Landscape Construction</small>
-    <div>
+    <div className="client">
       <a href="https://github.com/melissa-murphy/glinorcaldev" target="blank" rel="noreferrer">
         <i className="fab fa-github fa-2x" />
       </a>
     </div>
     <Image src={sps} width={20} />
     <small>Sacramento Philatelic Society</small>
-    <div>
+    <div className="client">
       <a href="https://github.com/melissa-murphy/stampSociety" target="blank" rel="noreferrer">
         <i className="fab fa-github fa-2x" />
       </a>
