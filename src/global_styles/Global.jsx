@@ -45,6 +45,9 @@ hr {
   border-color: ${({ theme }) => theme.color.primary};
   max-width: 90vw;
   margin: 3rem auto;
+  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+    max-width: 1000px;
+  }
   
 }
 .navlink {
