@@ -55,6 +55,7 @@ Install the app
 
 ```
 npm i
+npx eslint init
 ```
 
 Firebase connection
