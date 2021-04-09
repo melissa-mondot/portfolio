@@ -1,8 +1,7 @@
-// Firebase App (the core Firebase SDK) is always required and
-// must be listed before other Firebase SDKs
+// call Firebase
 import firebase from 'firebase/app';
 
-// Add the Firebase services that you want to use
+// active Firebase services
 import 'firebase/auth';
 import 'firebase/firestore';
 
@@ -12,10 +11,11 @@ const firebaseConfig = {
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
 };
 
-// Initialize firebase and firestore
+// initialize Firebase and Firestore
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
+// Data set sent to Firestore
 export const createMessage = (contactName, contactEmail, contactMsg) => {
   const timestamp = new Date();
   return db.collection('contactForm').add({
