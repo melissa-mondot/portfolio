@@ -22,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     ${'' /* height: 100vh; */}
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align:center;
   }
 
   h1, h3 {
@@ -29,9 +30,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   h2, h4, h5, h6 {
     font-family: "Raleway"
-  }
-  div {
-    text-align: center;
   }
   small {
     display: block;
