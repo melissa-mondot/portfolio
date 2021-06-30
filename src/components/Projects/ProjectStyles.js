@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-export const StyledPreviousClients = styled.div`
+export const ProjectStyles = styled.div`
   div.client {
-    max-width: 600px;
+    max-width: 130px;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
+    display: flex;
     a {
       svg {
         margin: 1rem auto;

@@ -1,13 +1,12 @@
 import React from 'react';
-import { Hero, PreviousClients, Introduction, CurrentProject, Skills } from '../components';
+import { Hero, Projects, Introduction, Skills } from '../components';
 
 const Home = () => (
   <>
     <Hero />
     <Introduction />
     <Skills />
-    <PreviousClients />
-    <CurrentProject />
+    <Projects />
   </>
 );
 
