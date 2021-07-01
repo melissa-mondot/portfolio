@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const ProjectStyles = styled.div`
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
   div.info {
     margin: 1rem;
@@ -12,7 +13,7 @@ export const ProjectStyles = styled.div`
     div.links {
       display: flex;
       justify-content: space-evenly;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
 
       a {
         max-width: min-content;
