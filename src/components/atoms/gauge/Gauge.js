@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ProgressLayer } from './Progress';
 
@@ -46,3 +47,13 @@ const Container = styled.div`
   /* position: absolute; */
 `;
 export default LiveGauge;
+
+LiveGauge.propTypes = {
+  actual: PropTypes.number,
+  goal: PropTypes.number,
+};
+
+LiveGauge.defaultProps = {
+  actual: 0,
+  goal: 0,
+};

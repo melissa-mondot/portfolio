@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 export const ProgressLayer = ({ ...props }) => {
@@ -27,6 +28,16 @@ export const ProgressLayer = ({ ...props }) => {
       </StyledSvg>
     </>
   );
+};
+
+ProgressLayer.propTypes = {
+  dashArray: PropTypes.number,
+  dashOffset: PropTypes.number,
+};
+
+ProgressLayer.defaultProps = {
+  dashArray: 0,
+  dashOffset: 0,
 };
 
 const StyledSvg = styled.svg`
