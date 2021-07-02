@@ -30,6 +30,10 @@ export const StyledMenu = styled.nav`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
   }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
 
   a {
     font-size: 2rem;
