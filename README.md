@@ -66,7 +66,9 @@ firebase init (domain and Firestore)
 ```
 
 Firebase secrets environment
+
 ##### copy from .env.example
+
 ```
 touch .env
 ```
@@ -88,6 +90,7 @@ firebase deploy
 - [Firestore](https://firebase.google.com/docs/firestore/) - Database
 - [Firebase Admin SDK](https://firebase.google.com/docs/admin/setup) - Server Framework
 - [React](https://reactjs.org/) - Web Framework
+- [Styled Components](https://styled-components.com/) - CSS in template literals
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
@@ -95,5 +98,3 @@ firebase deploy
 - [@melissa-mondot](https://github.com/melissa-mondot) - Idea & Initial work
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-@LambdaSchool for everything <3
