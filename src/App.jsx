@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './views/Home';
 import Contact from './views/Contact';
 import Resume from './views/Resume';
-import { Footer, MobileNav } from './components';
+import { Footer, Burger, Menu } from './components';
 import { useOnClickOutside, useOnClick } from './hooks';
 
 const App = () => {
@@ -15,7 +15,8 @@ const App = () => {
   return (
     <>
       <div ref={node}>
-        <MobileNav open={open} setOpen={setOpen} />
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
       </div>
 
       <Switch>
