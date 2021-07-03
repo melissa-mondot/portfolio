@@ -25,7 +25,9 @@ export const ResumeWrapper = styled.div`
   border-left: 2px outset darkgray;
   border-bottom: 2px outset darkgray;
   border-right: 2px inset darkgray;
+  padding: 1rem 1rem 2rem 2rem;
   padding-left: 4px;
+  padding-bottom: 1rem;
   text-align: left;
   p {
     margin-top: 0;
@@ -43,5 +45,8 @@ export const ResumeWrapper = styled.div`
   p.codeIndent,
   div.codeIndent {
     margin: 0 0 0 10px;
+  }
+  span.expKeys {
+    color: blue;
   }
 `;
