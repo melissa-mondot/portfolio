@@ -12,7 +12,6 @@ export const StyledFooter = styled.div`
   footer {
     text-align: left;
     margin-left: 2rem;
-
     nav {
       display: flex;
       flex-direction: column;
@@ -22,17 +21,17 @@ export const StyledFooter = styled.div`
       a {
         color: ${({ theme }) => theme.color.dark};
       }
-      div {
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        margin-left: 0;
-        a {
-          color: ${({ theme }) => theme.color.dark};
-          margin-right: 1rem;
-          i {
-            box-shadow: 6px 6px 18px #00000016, -6px -6px 18px #ffffff;
-          }
+    }
+    div.socialLinks {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      a {
+        color: ${({ theme }) => theme.color.dark};
+        margin-right: 1rem;
+        i {
+          box-shadow: 6px 6px 18px #00000016, -6px -6px 18px #ffffff;
         }
       }
     }
