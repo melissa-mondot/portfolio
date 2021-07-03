@@ -17,8 +17,8 @@ export const ResumeTab = styled.div`
   }
 `;
 export const ResumeWrapper = styled.div`
+  max-width: 800px;
   background-color: #1d1c1c;
-  min-width: 95vw;
   min-height: 60vh;
   position: relative;
   margin: 0rem 3rem;
