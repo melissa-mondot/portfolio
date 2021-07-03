@@ -40,7 +40,8 @@ export const ResumeWrapper = styled.div`
     margin-top: 0;
     color: purple;
   }
-  p.codeIndent {
+  p.codeIndent,
+  div.codeIndent {
     margin: 0 0 0 10px;
   }
 `;
