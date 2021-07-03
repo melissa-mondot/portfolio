@@ -14,6 +14,7 @@ const App = () => {
 
   return (
     <>
+      <h1 className="header">Melissa Mondot</h1>
       <div ref={node}>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
