@@ -63,4 +63,7 @@ hr {
   transform: translateX(0px);
   animation: 3s slidein;
 }
+h1.header {
+  font-family: "Raleway"
+}
 `;

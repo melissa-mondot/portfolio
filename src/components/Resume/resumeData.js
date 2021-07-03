@@ -1,6 +1,6 @@
 export const resumeData = {
   summary:
-    'Experienced web developer (8 years static web, 1+ year with React/Node), with a solid background in marketing and business development. Demonstrated ability to increase businesses’ online presence by creating creative websites and ensuring the availability of required IT services. Instrumental in producing new concepts and ideas for the achievement of set targets without compromising quality. Familiar with state management and developing/using REST APIs, experienced with UI libraries like react-strap, react-spring, and MUI. Skilled in CSS, animations, and graphic design. Well-versed in achieving business, branding, and marketing objectives using development tools and best practices along with professional relationship building with clients, stakeholders, and multi-disciplinary functions. ',
+    'Experienced web developer (8 years static web, 1+ year with React/Node), with a solid background in marketing and business development. Demonstrated ability to increase businesses’ online presence by creating creative websites and ensuring the availability of required IT services. Instrumental in producing new concepts and ideas for the achievement of set targets without compromising quality. Familiar with state management and developing/using REST APIs, experienced with UI libraries like react-strap, react-spring, and MUI. Skilled in CSS, animations, and graphic design. Well-versed in achieving business, branding, and marketing objectives using development tools and best practices along with professional relationship building with clients, stakeholders, and multi-disciplinary functions.',
   expertise: [
     'Full Stack Web Development',
     'UI Design &amp; Graphic Art',
@@ -13,6 +13,7 @@ export const resumeData = {
   ],
   experience: [
     {
+      id: 1,
       company: 'Various Clients, SF Bay Area',
       title: 'Freelance Web Developer for Small Businesses',
       date: '2016-present',
@@ -23,6 +24,7 @@ export const resumeData = {
       ],
     },
     {
+      id: 2,
       company: 'Lambda School, San Francisco',
       title: 'Section Lead, Full Stack Web',
       date: '2019-2021',
@@ -33,6 +35,7 @@ export const resumeData = {
       ],
     },
     {
+      id: 3,
       company: 'GLI NorCal Landscape Construction, Greenbrae',
       title: 'Business Development Officer',
       date: '2012-2019',

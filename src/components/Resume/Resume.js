@@ -1,129 +1,74 @@
 import React from 'react';
-import {
-  ResumeWrapper,
-  ResumeIntro,
-  ResumeExpertise,
-  ResumeExperience,
-  ResumeEducation,
-  ResumeTechStack,
-} from './ResumeStyles';
+import { ResumeTab, ResumeWrapper } from './StyledResume';
+import { Experience } from './Experience';
+import { resumeData as r } from './resumeData';
 
-const DevResume = () => (
-  <ResumeWrapper>
-    <ResumeIntro>
-      <h4>Frontend Development</h4>
-      <p>
-        Accomplished full stack web developer with solid background in marketing and business
-        development. Demonstrated ability to increase businesses’ online presence by creating
-        creative websites and ensuring availability of required IT services. Instrumental in
-        producing new concepts and ideas for the achievement of set targets without compromising
-        quality. Excel at state-management (Context API, Hooks, and Redux) as well as Express API,
-        and UI libraries like react-strap and react-spring. Well versed in achieving business,
-        branding, and marketing objectives using development tools and best practices along with
-        professional relationship building with clients, stakeholders, and multi-disciplinary
-        functions.{' '}
-      </p>
-    </ResumeIntro>
-    <ResumeExpertise>
-      <h3>Areas Of Expertise</h3>
-      <ul>
-        <li>Project Management</li>
-        <li>Full stack Web Development</li>
-        <li>JavaScript(React), Node.js</li>
-        <li>Sass/Less &amp; CSS Animations</li>
-      </ul>
-      <ul>
-        <li>Clients&apos; Needs Assessment</li>
-        <li>Business Development</li>
-        <li>Inbound &amp; Outbound Marketing</li>
-        <li>Development Tools Utilization</li>
-      </ul>
-      <ul>
-        <li>Leadership &amp; Training</li>
-        <li>Concept Creation</li>
-        <li>Graphic Design</li>
-        <li>SEO &amp; Context Writing</li>
-      </ul>
-    </ResumeExpertise>
-    <ResumeExperience>
-      <h3>Professional Experience</h3>
-      <h4>
-        Lambda School, San Francisco
-        <br />
-        Section Lead, Full Stack Web Developer
-      </h4>
-      <p>
-        Direct a team of over 15 team leaders (TLs), while providing support in communication and
-        scheduling from external associates. Facilitate students and TLs to develop soft and coding
-        skills. Deliver guidance to up to 150 students on full stack web development program.
-        Improve student’s performance outcomes by coordinating section instructions and student
-        success initiatives. Devise new coaching ideas from statistics based on data points and
-        students’ feedback.
-      </p>
-      <ul>
-        <li>
-          Created various methods as best practices of tracking/supporting the students, saving up
-          to five hours (weekly) of admin work.
-        </li>
-        <li>
-          {' '}
-          Successfully guided three cohorts through Full Stack Web Development and Computer Science
-          programs.{' '}
-        </li>
-      </ul>
-      <h4>
-        Various Clients, SF Bay Area
-        <br />
-        Freelance Web Developer for Small Businesses
-      </h4>
-      <p>
-        Assess clients’ business needs and provide web-based solutions such as web development,
-        graphic designing, and SEO and content writing. Initiate inbound marketing as part of brand
-        development, increasing market presence of the business.
-      </p>
-      <ul>
-        <li>Ensured timely creation and expansion of online visibility for over five clients. </li>
-      </ul>
-      <h4>
-        GLI Norcal Landscape, Greenbrae
-        <br />
-        Business Development Officer
-      </h4>
-      <p>
-        Carried out branding with associated in/outbound marketing, managing web development and
-        increasing web presence. Ensured availability of required IT services.{' '}
-      </p>
-      <ul>
-        <li>
-          Played a key role as general idea creator to promote the brand and achieve set milestones.{' '}
-        </li>
-        <li>
-          Resurfaced the company after the great recession from 2012 to 2015 via rebranding and
-          rebooting of the company.
-        </li>
-      </ul>
-    </ResumeExperience>
-    <ResumeEducation>
-      <h3>Education</h3>
-      <h4>Full Stack Web</h4>
-      <p>
-        Lambda School, San Francisco, <em>(Current)</em>
-      </p>
-      <h4>Bachelor of Arts (Graduated Magna Cum Laude)</h4>
-      <p>California State University, Sacramento</p>
-    </ResumeEducation>
-    <ResumeTechStack>
-      <h3>Technical Proficiencies</h3>
-      <div>
+const DevResume = () => {
+  const expertiseList = r.expertise.map((item) => item).join(', ');
+
+  const experienceList = Array.from(r.experience.map((item) => item))
+    .map((el) => el)
+    .map((listing) => <Experience key={listing.id} listing={listing} />);
+
+  const technicalList = r.technicalProficiencies.map((techItem) => (
+    <p className="codeIndent">
+      <code>{techItem}, </code>
+    </p>
+  ));
+
+  const edList = r.education.map((edItem) => (
+    <p className="codeIndent">
+      <code>{edItem}, </code>
+    </p>
+  ));
+
+  return (
+    <>
+      <ResumeTab>
         <p>
-          HTML, CSS3, React, Python, Django <br /> Adobe / Illustrator – Photoshop – InDesign - XD{' '}
-          <br /> Google Ads/Analytics | CMS Systems | Firebase
-          <br />
-          Figma | Whimsical | Gulp.js, Parcel.js, &amp; Webpack | Node.js{' '}
+          <i className="fab fa-js-square" />
+          Resume.js
         </p>
-      </div>
-    </ResumeTechStack>
-  </ResumeWrapper>
-);
+      </ResumeTab>
+      <ResumeWrapper>
+        <p>
+          <code>
+            <span className="fakeExport">export const </span>
+            <span className="fakeComponent">Resume</span> = {`{`}
+          </code>
+        </p>
+        <code className="resumeDataKey">summary: </code>
+        <p className="codeIndent">
+          <code>{r.summary}</code>
+          <span>,</span>
+        </p>
+        <code className="resumeDataKey">expertise: </code>
+        <span> [</span>
+        <p className="codeIndent">
+          <code>{expertiseList}</code>
+          <span> ],</span>
+        </p>
+        <code className="resumeDataKey">experience: </code>
+        <span> [</span>
+        <p className="codeIndent">
+          {experienceList}
+          <span> ],</span>
+        </p>
+        <code className="resumeDataKey">technicalProficiencies: </code>
+        <span> [</span>
+        <p className="codeIndent">
+          {technicalList}
+          <span>] </span>
+        </p>
+        <code className="resumeDataKey">education: </code>
+        <span> [</span>
+        <p className="codeIndent">
+          {edList}
+          <span>] </span>
+        </p>
+      </ResumeWrapper>
+    </>
+  );
+};
 
 export default DevResume;
