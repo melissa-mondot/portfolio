@@ -17,7 +17,7 @@ const Nav = () => {
       </NavLink>
     );
   const contact =
-    location.path === '/contact' ? null : (
+    location.pathname === '/contact' ? null : (
       <NavLink className="navlink" to="/contact">
         Contact Me
       </NavLink>
