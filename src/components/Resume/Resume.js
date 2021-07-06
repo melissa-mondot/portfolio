@@ -1,22 +1,19 @@
 import React from 'react';
+import { string, arrayOf, obj } from 'prop-types';
 import { ResumeTab, ResumeWrapper } from './StyledResume';
 import { Experience } from './Experience';
-import { resumeData as r } from './resumeData';
 
-const DevResume = () => {
-  const expertiseList = r.expertise.map((item) => item).join(', ');
-
-  const experienceList = Array.from(r.experience.map((item) => item))
-    .map((el) => el)
-    .map((listing) => <Experience key={listing.id} listing={listing} />);
-
-  const technicalList = r.technicalProficiencies.map((techItem) => (
+const DevResume = ({ summary, expertise, experience, technicalProficiencies, education }) => {
+  const expertiseList = expertise.join(', ');
+  const experienceList = experience.map((listing) => (
+    <Experience key={listing.id} listing={listing} />
+  ));
+  const technicalList = technicalProficiencies.map((techItem) => (
     <p className="codeIndent">
       <code>{techItem}, </code>
     </p>
   ));
-
-  const edList = r.education.map((edItem) => (
+  const edList = education.map((edItem) => (
     <p className="codeIndent">
       <code>{edItem}, </code>
     </p>
@@ -39,7 +36,7 @@ const DevResume = () => {
         </p>
         <code className="resumeDataKey">summary: </code>
         <p className="codeIndent">
-          <code>{r.summary}</code>
+          <code>{summary}</code>
           <span>,</span>
         </p>
         <code className="resumeDataKey">expertise: </code>
@@ -72,3 +69,11 @@ const DevResume = () => {
 };
 
 export default DevResume;
+
+DevResume.propTypes = {
+  summary: string.isRequired,
+  expertise: arrayOf(string).isRequired,
+  experience: arrayOf(obj).isRequired,
+  technicalProficiencies: arrayOf(string).isRequired,
+  education: arrayOf(string).isRequired,
+};
