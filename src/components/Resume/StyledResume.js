@@ -50,6 +50,11 @@ export const ResumeWrapper = styled.div`
     color: blue;
   }
 `;
+
+export const RenderedWrapper = styled.div`
+  max-width: 800px;
+  margin: 3rem;
+`;
 export const ResumeIntro = styled.div`
   h4 {
     text-align: right;
