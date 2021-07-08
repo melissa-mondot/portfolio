@@ -54,8 +54,16 @@ export const ResumeWrapper = styled.div`
 export const RenderedWrapper = styled.div`
   max-width: 800px;
   margin: 3rem;
+  h4.sections {
+    font-align: left;
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: ${({ theme }) => theme.color.secondary};
+  }
 `;
 export const ResumeIntro = styled.div`
+  h3,
   h4 {
     text-align: right;
     padding-right: 2rem;
@@ -69,6 +77,7 @@ export const ResumeIntro = styled.div`
 
 export const ResumeExpertise = styled.div`
   text-align: left;
+  margin-left: 2rem;
   h3 {
     margin-left: 2rem;
     font-variant: small-caps;
@@ -95,7 +104,14 @@ export const ResumeExperience = styled.div`
     margin-bottom: -1rem;
   }
   p {
-    margin-left: 2rem;
+    margin: 1rem 2rem -1rem 2rem;
+  }
+  p.renderedTitle {
+    margin: 1rem 2rem -1rem 2rem;
+    font-variant: small-caps;
+  }
+  small {
+    margin 1rem 2rem 0 2rem;
   }
   ul {
     margin-left: 1rem;
@@ -133,9 +149,5 @@ export const ResumeTechStack = styled.div`
     font-size: 1.1rem;
     letter-spacing: 3px;
     color: ${({ theme }) => theme.color.secondary};
-  }
-
-  p {
-    margin-left: 2rem;
   }
 `;

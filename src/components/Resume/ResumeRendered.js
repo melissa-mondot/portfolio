@@ -1,15 +1,13 @@
 import React from 'react';
 import { string, arrayOf, obj } from 'prop-types';
-
 import {
   RenderedWrapper,
   ResumeIntro,
   ResumeExpertise,
-  ResumeExperience,
   ResumeEducation,
   ResumeTechStack,
 } from './StyledResume';
-// import { resumeData as r } from './resumeData';
+import { RenderedExperience } from './RenderedExperience';
 
 export const RenderedResume = ({
   summary,
@@ -19,20 +17,33 @@ export const RenderedResume = ({
   education,
 }) => {
   const expertiseList = expertise.join(', ');
-  //   const experienceList = experience.map((listing) => (
-  //     <Experience key={listing.id} listing={listing} />
-  //   ));
+  const experienceList = experience.map((listing) => (
+    <RenderedExperience key={listing.id} listing={listing} />
+  ));
+  const edList = education.map((school) => <li>{school}</li>);
+  const techStack = technicalProficiencies.join(', ');
   return (
     <>
       <RenderedWrapper>
         <ResumeIntro>
+          <h3>Melissa Mondot</h3>
           <h4>Web Developer</h4>
           <p>{summary}</p>
         </ResumeIntro>
-        <ResumeExpertise expertiseList={expertiseList} />
-        <ResumeExperience experience={experience} />
-        <ResumeEducation education={education} />
-        <ResumeTechStack technicalProficiencies={technicalProficiencies} />
+        <h4 className="sections">Expertise</h4>
+        <ResumeExpertise>
+          <p>{expertiseList}</p>
+        </ResumeExpertise>
+        <h4 className="sections">Experience</h4>
+        {experienceList}
+        <h4 className="sections">Education</h4>
+        <ResumeEducation>
+          <ul>{edList}</ul>
+        </ResumeEducation>
+        <h4 className="sections">Tech Stack</h4>
+        <ResumeTechStack>
+          <p>{techStack}</p>
+        </ResumeTechStack>
       </RenderedWrapper>
     </>
   );

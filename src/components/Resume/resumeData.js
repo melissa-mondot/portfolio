@@ -16,7 +16,7 @@ export const resumeData = {
       id: 1,
       company: 'Various Clients, SF Bay Area',
       title: 'Freelance Web Developer for Small Businesses',
-      date: '2016-present',
+      date: '2016-Present',
       description:
         'Assess clients’ business needs and provide web-based solutions such as static web development, customizing SquareSpace templates, graphic designing, and SEO and content writing. Initiate inbound marketing as part of brand development, increasing the market presence of the business. Ensured timely creation and expansion of online visibility for over five clients.',
       highlights: [
@@ -58,6 +58,6 @@ export const resumeData = {
   ],
   education: [
     'Computer Science Certificate, Lambda School, San Francisco, 2019',
-    'Bachelor of Arts (Graduated Magna Cum Laude), California State University, Sacramento',
+    'Bachelor of Arts (Graduated Magna Cum Laude), California State University, Sacramento, 2011',
   ],
 };
