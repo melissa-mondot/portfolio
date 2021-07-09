@@ -2,14 +2,14 @@ export const resumeData = {
   summary:
     'Experienced web developer (8 years static web, 1+ year with React/Node), with a solid background in marketing and business development. Demonstrated ability to increase businesses’ online presence by creating creative websites and ensuring the availability of required IT services. Instrumental in producing new concepts and ideas for the achievement of set targets without compromising quality. Familiar with state management and developing/using REST APIs, experienced with UI libraries like react-strap, react-spring, and MUI. Skilled in CSS, animations, and graphic design. Well-versed in achieving business, branding, and marketing objectives using development tools and best practices along with professional relationship building with clients, stakeholders, and multi-disciplinary functions.',
   expertise: [
-    'Full Stack Web Development',
-    'UI Design &amp; Graphic Art',
-    'SCSS &amp; CSS3',
-    'Concept Creation',
-    'Project Management',
-    'Inbound Marketing',
-    'SEO &amp; Context Writing',
-    'Leadership &amp; Training',
+    `Full Stack Web Development`,
+    `UI Design & Graphic Art`,
+    `SCSS & CSS3`,
+    `Concept Creation`,
+    `Project Management`,
+    `Inbound Marketing`,
+    `SEO & Context Writing`,
+    `Leadership & Training`,
   ],
   experience: [
     {

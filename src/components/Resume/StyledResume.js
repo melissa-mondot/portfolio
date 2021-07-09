@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const RenderButton = styled.button`
+  background-color: ${({ theme }) => theme.color.secondary};
+  border-radius: 10px;
+  color: white;
+  font-family: Rock Salt;
+  padding: 1rem;
+  letter-spacing: 2px;
+`;
+
 export const ResumeTab = styled.div`
   p {
     border-top: 2px outset darkgray;
@@ -40,14 +49,14 @@ export const ResumeWrapper = styled.div`
   }
   code.resumeDataKey {
     margin-top: 0;
-    color: purple;
+    color: #7d12ff;
   }
   p.codeIndent,
   div.codeIndent {
     margin: 0 0 0 10px;
   }
   span.expKeys {
-    color: blue;
+    color: #40a4ff;
   }
 `;
 

@@ -3,7 +3,13 @@ import { string, arrayOf, obj } from 'prop-types';
 import { ResumeTab, ResumeWrapper } from './StyledResume';
 import { Experience } from './Experience';
 
-const DevResume = ({ summary, expertise, experience, technicalProficiencies, education }) => {
+export const ObjResume = ({
+  summary,
+  expertise,
+  experience,
+  technicalProficiencies,
+  education,
+}) => {
   const expertiseList = expertise.join(', ');
   const experienceList = experience.map((listing) => (
     <Experience key={listing.id} listing={listing} />
@@ -68,9 +74,7 @@ const DevResume = ({ summary, expertise, experience, technicalProficiencies, edu
   );
 };
 
-export default DevResume;
-
-DevResume.propTypes = {
+ObjResume.propTypes = {
   summary: string.isRequired,
   expertise: arrayOf(string).isRequired,
   experience: arrayOf(obj).isRequired,
